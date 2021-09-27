@@ -19,30 +19,54 @@
                         <path d="M2 1.5L23.0909 20.5L42 1.5" stroke="black" stroke-width="3"/>
                     </svg>
                     <ul class="levelEducation-all">
-                        <li>среднее профессиональное</li>
-                        <li>высшее образование</li>
+                        <li>Среднее профессиональное</li>
+                        <li>Высшее образование</li>
                         <li>Магистратура</li>
                     </ul>
                 </div>
                 <div class="educationEnding smallArea">
                     <input class="area" onkeyup="validate(this)" type="text" placeholder="Год окончания">
+                    <span class="educationEnding-error">Данное поле должно содеражть только цифры</span>
                 </div>
             </div>
             <div class="name">
+                <svg class="close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 29.3333C8.63602 29.3333 2.66669 23.364 2.66669 16C2.66669 8.63601 8.63602 2.66667 16 2.66667C23.364 2.66667 29.3334 8.63601 29.3334 16C29.3334 23.364 23.364 29.3333 16 29.3333ZM16 26.6667C18.829 26.6667 21.5421 25.5429 23.5425 23.5425C25.5429 21.5421 26.6667 18.829 26.6667 16C26.6667 13.171 25.5429 10.4579 23.5425 8.45753C21.5421 6.45714 18.829 5.33334 16 5.33334C13.171 5.33334 10.4579 6.45714 8.45755 8.45753C6.45716 10.4579 5.33335 13.171 5.33335 16C5.33335 18.829 6.45716 21.5421 8.45755 23.5425C10.4579 25.5429 13.171 26.6667 16 26.6667ZM16 14.1147L19.7707 10.3427L21.6574 12.2293L17.8854 16L21.6574 19.7707L19.7707 21.6573L16 17.8853L12.2294 21.6573L10.3427 19.7707L14.1147 16L10.3427 12.2293L12.2294 10.3427L16 14.1147Z" fill="#A2A2AE"/>
+                </svg>                    
                 <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
                 </svg>
                 <svg class="search" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.6667 0.666672C19.2907 0.666672 24.6667 6.04267 24.6667 12.6667C24.6667 19.2907 19.2907 24.6667 12.6667 24.6667C6.04266 24.6667 0.666656 19.2907 0.666656 12.6667C0.666656 6.04267 6.04266 0.666672 12.6667 0.666672ZM12.6667 22C17.8227 22 22 17.8227 22 12.6667C22 7.50934 17.8227 3.33334 12.6667 3.33334C7.50932 3.33334 3.33332 7.50934 3.33332 12.6667C3.33332 17.8227 7.50932 22 12.6667 22ZM23.98 22.0947L27.752 25.8653L25.8653 27.752L22.0947 23.98L23.98 22.0947Z" fill="#E62B25"/>
                 </svg>
+                <svg class="closeWindow" width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1.5L23.0909 20.5L42 1.5" stroke="black" stroke-width="3"/>
+                </svg>
                 <input class="area" placeholder="Введите для выбора ВУЗа" type="text">
+                <ul class="allUnivercity">
+                    <li>Московский технический университет</li>
+                    <li>МОСГУ</li>
+                    <li>МОСиНТЕХ</li>
+                    <li>Третий московский филиал</li>
+                </ul>
             </div>
             <div class="details">
-                <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
-                </svg>
-                <input type="text" class="area series" placeholder="Серия">
-                <input type="text" class="area number" placeholder="Номер">
+                <div class="seriesForm">
+                    <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
+                    </svg>
+                    <input type="text" class="area series" placeholder="Серия">
+                    <span class="importantArea">Данное поле обязательное</span>
+                    <span class="countOfSymbols">Необходимо ввести 10 цифр</span>
+                    <span class="validateMessage">Данное поле должно содеражть только цифры</span>
+                </div>
+                <div class="numberForm">
+                    <input type="text" class="area number" placeholder="Номер">
+                    <span class="importantArea">Данное поле обязательное</span>
+                    <span class="countOfSymbols">Необходимо ввести 10 цифр</span>
+                    <span class="validateMessage">Данное поле должно содеражть только цифры</span>
+                </div>
+          
             </div>
             <div class="speciality">
                 <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,3 +113,4 @@
     <script src="./assets/index.js"></script>
 </body>
 </html>
+
