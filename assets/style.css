@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'ALSHauss-Regular';
+    src: url('./fonts/ALSHauss-Regular.eot');
+    src: url('./fonts/ALSHauss-Regular.eot') format('embedded-opentype'),
+         url('./fonts/ALSHauss-Regular.woff') format('woff'),
+         url('./fonts/ALSHauss-Regular.woff2') format('woff2'),
+         url('./fonts/ALSHauss-Regular.eot') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ALSHauss-Medium';
+    src: url('./fonts/ALSHauss-Medium.eot');
+    src: url('./fonts/ALSHauss-Medium.eot') format('embedded-opentype'),
+         url('./fonts/ALSHauss-Medium.woff') format('woff'),
+         url('./fonts/ALSHauss-Medium.woff2') format('woff'),
+         url('./fonts/ALSHauss-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+body{
+    font-family: 'ALSHauss-Regular', sans-serif;
+    line-height: 1.5;
+}
+.red{
+    color: #E62B25;
+}
+.grey{
+    color: #A2A2AE;
+}
+.black{
+    color: #000;
+}
+.content{
+    padding-top: 48px;
+    padding-left: 48px;
+    max-width: 824px;
+}
+
+h1{
+    font-family: 'ALSHauss-Medium', sans-serif;
+    margin-bottom: 40px;
+}
+input:hover{
+    border: 1px solid #E62B25
+}
+input:active{
+    border: 2px solid #E62B25;
+}
+
+.inputError{
+    border: 1px solid #FF000B;
+    background: rgba(215, 44, 51, 0.07);
+    color: #FF000A;
+}
+.education{
+    display: flex;
+    align-items: center;
+}
+.education, .name, .details, .speciality, .qualification, .nostrification, .buttons{
+    margin-bottom: 32px;
+    z-index: 1;
+}
+.smallArea{
+    width: 374px;
+}
+
+.area{
+    border: 1px solid #E5E5E5;
+    border-radius: 24px;
+    position: relative;
+    padding-left: 24px;
+}
+.answer{
+    position: absolute;
+    top: 24.5px;
+    left: 24px;
+}
+.levelEducation{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    width: -webkit-fill-available;
+    height: 80px;
+}
+.placeholder{
+    position: absolute;
+    top: 24.5px;
+    left: 24px;
+}
+.levelEducation svg{
+    margin-right: 28px;
+}
+
+.educationEnding{
+    width:-webkit-fill-available;
+    font-size: 20px;
+    margin-left: 24px;
+}
+input::placeholder {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #A2A2AE;
+}
+input[type='text']{
+    width: -webkit-fill-available;
+    height: 80px;
+}
+.educationEnding input{
+    padding-left: 24px;
+    height: 80px;
+    width: 374px;
+}
+.name{
+    position: relative;
+}
+.name svg{
+    position: absolute;
+}
+.name .important{
+    top: 30px;
+    left: 35px;
+    z-index: 100;
+}
+.name .search{
+    top: 26.67px;
+    left: 66.67px;
+    z-index: 100;
+}
+.name input{
+    width: -webkit-fill-available;
+    padding-left: 112px;
+    height: 80px;
+}
+.details{
+    display: flex;
+    position: relative;
+}
+.details .series{
+    width: 352px;
+    padding-left: 46px;
+}
+.details svg{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    z-index: 10;
+}
+.details .number{
+    margin-left: 24px;
+    width: 374px;
+}
+.speciality, .qualification{
+    position: relative;
+}
+.speciality input, .qualification input{
+    padding-left: 46px;
+}
+.speciality svg, .qualification svg{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    z-index: 10;
+}
+.nostrification{
+    display: flex;
+    align-items: center;
+}
+
+.nostrification input{
+    position: absolute;
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+    z-index: -1;
+}
+
+.nostrification+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+.nostrification+label::before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.nostrification:checked+label::before {
+    border: 1px solid #adb5bd;
+    background-color: #fff;
+    background-image: url("./img/agree.svg");
+}
+.download{
+    position: relative;
+    width: -webkit-fill-available;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    margin-bottom: 40px;
+}
+.download_text{
+    padding: 25px 142.5px;
+    align-items: center;
+    font-size: 22px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.buttons button{
+    display: flex;
+    border-radius: 500px;
+    align-items: center;
+    font-size: 18px;
+}
+.buttons button[type="submit"]{
+    background: #E62B25;
+    border: none;
+    color: #fff;
+    padding: 18px 103.5px;
+}
+.buttons .cancel{
+    color: #A2A2AE;
+    border:  2px solid #E5E5E5;
+    padding: 14px 99.5px;
+    background: #fff;
+    margin-left: 24px;
+}
+
+.designation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    color: #A2A2AE;;
+}
+.designation div{
+    position: relative;
+}
+.designation div svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.designation_important{
+    max-width: 257.5px;
+}
+.designation_important span{
+    padding-left: 22.5px;
+}
+.designation_show{
+    margin-left: 65.55px;
+    max-width: 260.5px;
+}
+.designation_show span{
+    padding-left: 22.5px;
+}
+
+/* Forms */
+
+.levelEducation-all{
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: block;
+    border-radius: 24px;
+    transition: .3s ease-in-out;
+    pointer-events: none;
+}
+.levelEducation-all-show{
+    top: 80px;
+    opacity: 1;
+    z-index: 2;
+    transition: .3s ease-in-out;
+    pointer-events: all;
+}
+.levelEducation-all li{
+    padding-top: 25px;
+    padding-left: 28px;
+    transition: .3s ease-in-out;
+}
+.levelEducation-all li:hover{
+    background: rgba(245, 245, 245, 0.8);
+    transition: .3s ease-in-out;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Образование</h1>
+        <form action="#">
+            <div class="education">
+                <div class="levelEducation area smallArea">
+                    <span class="answer"></span>
+                    <div class="placeholder">Уровень образования</div>
+                    <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 1.5L23.0909 20.5L42 1.5" stroke="black" stroke-width="3"/>
+                    </svg>
+                    <ul class="levelEducation-all">
+                        <li>среднее профессиональное</li>
+                        <li>высшее образование</li>
+                        <li>Магистратура</li>
+                    </ul>
+                </div>
+                <div class="educationEnding smallArea">
+                    <input class="area" onkeyup="validate(this)" type="text" placeholder="Год окончания">
+                </div>
+            </div>
+            <div class="name">
+                <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
+                </svg>
+                <svg class="search" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6667 0.666672C19.2907 0.666672 24.6667 6.04267 24.6667 12.6667C24.6667 19.2907 19.2907 24.6667 12.6667 24.6667C6.04266 24.6667 0.666656 19.2907 0.666656 12.6667C0.666656 6.04267 6.04266 0.666672 12.6667 0.666672ZM12.6667 22C17.8227 22 22 17.8227 22 12.6667C22 7.50934 17.8227 3.33334 12.6667 3.33334C7.50932 3.33334 3.33332 7.50934 3.33332 12.6667C3.33332 17.8227 7.50932 22 12.6667 22ZM23.98 22.0947L27.752 25.8653L25.8653 27.752L22.0947 23.98L23.98 22.0947Z" fill="#E62B25"/>
+                </svg>
+                <input class="area" placeholder="Введите для выбора ВУЗа" type="text">
+            </div>
+            <div class="details">
+                <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
+                </svg>
+                <input type="text" class="area series" placeholder="Серия">
+                <input type="text" class="area number" placeholder="Номер">
+            </div>
+            <div class="speciality">
+                <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
+                </svg>
+                <input class="area" placeholder="Введите для выбора ВУЗа" type="text">
+            </div>
+            <div class="qualification">
+                <svg class="important" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.42 0L4.36 2.78L7.02 1.88L7.44 3.18L4.78 4.02L6.44 6.26L5.32 7.04L3.72 4.78L2.1 7.04L1 6.26L2.66 4.02L0 3.18L0.42 1.88L3.06 2.78L3.02 0H4.42Z" fill="#F99B1C"/>
+                </svg>
+                <input class="area" placeholder="Специальность по диплому" type="text">
+            </div>
+            <div class="nostrification">
+                <input type="checkbox" id="agree" class="nostrification" value="HTML">
+                <label for="agree">Нострификация</label>
+            </div>
+            <div class="download">
+                <div class="download_text">
+                    <span class="red">Документ:</span> <span class="grey">Загрузить файлы или</span> <span class="black">открыть проводник</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit">Сохранить</button>
+                <button class="cancel">Отмена</button>
+            </div>
+            <div class="designation">
+                <div class="designation_important">
+                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.02273 0L4.95455 3.15909L7.97727 2.13636L8.45455 3.61364L5.43182 4.56818L7.31818 7.11364L6.04545 8L4.22727 5.43182L2.38636 8L1.13636 7.11364L3.02273 4.56818L0 3.61364L0.477273 2.13636L3.47727 3.15909L3.43182 0H5.02273Z" fill="#E62B25"/>
+                    </svg>
+                    <span>Поля обязательные для заполнения</span> 
+                </div>
+                <div class="designation_show">
+                    <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.02273 0L4.95455 3.15909L7.97727 2.13636L8.45455 3.61364L5.43182 4.56818L7.31818 7.11364L6.04545 8L4.22727 5.43182L2.38636 8L1.13636 7.11364L3.02273 4.56818L0 3.61364L0.477273 2.13636L3.47727 3.15909L3.43182 0H5.02273Z" fill="#E78E24"/>
+                    </svg>
+                    <span>Поля видны для всех пользователей</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
