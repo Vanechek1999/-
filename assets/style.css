@@ -137,6 +137,7 @@ input[type='text']{
     position: relative;
     margin-bottom: 32px;
     font-size: 20px;
+    z-index: 2;
 }
 .name svg{
     position: absolute;
@@ -267,8 +268,18 @@ input[type='text']{
 }
 .download_text{
     padding: 25px 142.5px;
+    display: flex;
     align-items: center;
     font-size: 22px;
+}
+input[type='file']{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
 }
 .buttons{
     display: flex;
@@ -372,13 +383,17 @@ input[type='text']{
     opacity: 0;
     z-index: 10;
 }
-.allUnivercity li{
+.allUnivercityItem{
     margin-bottom: 15px;
     transition: .3s ease-in-out;
     padding-left: 28px;
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     font-size: 20px;
+    display: none;
+}
+.showText{
+    display: block;
 }
 .allUnivercity li:hover{
     background: rgba(245, 245, 245, 0.8);
@@ -393,4 +408,13 @@ input[type='text']{
 }
 
 
-
+.yourDocument{
+    z-index: 20;
+    position: relative;
+    padding-right: 10px;
+}
+.yourDocument svg{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
