@@ -206,3 +206,30 @@ function showFile(item, text){
         content.innerHTML = `<span class="red">Документ:</span> <span class="grey">Загрузить файлы или</span> <span class="black">открыть проводник</span>`
     })
 }
+
+function newColors(){
+    let items = document.querySelectorAll('.allItems .item');
+    let a = 0;
+    let startAnimation = setInterval(() => {
+        for(let i =0; i< items.length; i++){
+            if(items[i].classList.contains('showItem')){
+                a++;
+                if(a<= 38){
+                    console.log('as');
+                    let newClass= setInterval(() => {
+                        items[i+1].classList.add('showItem')
+                    }, 0);
+                }else{
+                    clearInterval(startAnimation)
+                    
+                }
+            }else{
+                items[0].classList.add('showItem')
+            }
+        }
+    }, 300);
+
+
+
+}
+document.querySelector('.btnNEW').addEventListener('click', newColors)
